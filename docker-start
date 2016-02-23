@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mysqld_safe --defaults-file=/etc/my.cnf & /opt/tomcat/apache-tomcat-7.0.68/bin/startup.sh & /usr/sbin/sshd -D
