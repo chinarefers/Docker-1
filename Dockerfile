@@ -14,14 +14,14 @@ RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 RUN mkdir /var/run/sshd
 
 
-ADD docker-init /usr/bin/docker-init
-RUN chmod +x /usr/bin/docker-init
-RUN /usr/bin/docker-init
+#ADD docker-init /usr/bin/docker-init
+#RUN chmod +x /usr/bin/docker-init
+#RUN /usr/bin/docker-init
 
-ADD docker-start /usr/bin/docker-start
-RUN chmod +x /usr/bin/docker-start
+#ADD docker-start /usr/bin/docker-start
+#RUN chmod +x /usr/bin/docker-start
 
-ADD my.cnf /etc/my.cnf
+#ADD my.cnf /etc/my.cnf
 
 RUN wget http://apache.opencas.org/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.tar.gz
 RUN mkdir /opt/tomcat/
