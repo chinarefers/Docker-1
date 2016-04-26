@@ -18,8 +18,8 @@ RUN mkdir /var/run/sshd
 #RUN chmod +x /usr/bin/docker-init
 #RUN /usr/bin/docker-init
 
-#ADD docker-start /usr/bin/docker-start
-#RUN chmod +x /usr/bin/docker-start
+ADD docker-start /usr/bin/docker-start
+RUN chmod +x /usr/bin/docker-start
 
 #ADD my.cnf /etc/my.cnf
 
