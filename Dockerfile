@@ -23,13 +23,13 @@ RUN chmod +x /usr/bin/docker-start
 
 ADD my.cnf /etc/my.cnf
 
-RUN wget http://apache.opencas.org/tomcat/tomcat-7/v7.0.68/bin/apache-tomcat-7.0.68.tar.gz
+RUN wget http://apache.opencas.org/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.tar.gz
 RUN mkdir /opt/tomcat/
-RUN tar -xzvf apache-tomcat-7.0.68.tar.gz -C /opt/tomcat/
+RUN tar -xzvf apache-tomcat-7.0.69.tar.gz -C /opt/tomcat/
 
-RUN rm apache-tomcat-7.0.68.tar.gz
+RUN rm apache-tomcat-7.0.69.tar.gz
 
-ADD tomcat-users.xml /opt/tomcat/apache-tomcat-7.0.68/conf/tomcat-users.xml
+ADD tomcat-users.xml /opt/tomcat/apache-tomcat-7.0.69/conf/tomcat-users.xml
 
 
 EXPOSE 22 3306 8080
